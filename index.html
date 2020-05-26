@@ -41,6 +41,36 @@ This photosphere looks from the Atlas Mountains in Northern Algeria, over the ar
 This photosphere on the northern Scottish island of Handa includes lush green plains and rocky, steep cliffs. In the distance, you can see the hills of the Scottish highlands on the mainland. There are also some people sitting and standing on the cliff edge in this photosphere.
 </p>
 <br>
+ <html>
+<button onclick="randomLink();OpenInNewTab();">Click here for a random photosphere!</button>
+
+    <script type="text/javascript">
+// the used links
+var links = [
+    "https://bit.ly/3cZy1e4",
+    "https://bit.ly/36s1efi",
+    "https://bit.ly/2Tw6Dgb",
+    "https://bit.ly/2XGixFF",
+    "https://bit.ly/2B0BkDR",
+    "https://bit.ly/2X17yHK",
+    "https://bit.ly/3c3STzw",
+    "https://bit.ly/36tutOG",
+    "https://bit.ly/2A9Me9D",
+    "https://bit.ly/36rEUT0",
+    "https://bit.ly/2B2OJLE"];
+
+openStuff = function () {
+    // get a random number between 0 and the number of links
+    var randIdx = Math.random() * links.length;
+    // round it, so it can be used as array index
+    randIdx = parseInt(randIdx, 10);
+    // construct the link to be opened
+    var link = 'http://' + links[randIdx];
+    // open it in a new window / tab (depends on browser setting)
+    window.open(link);
+};
+</script>
+  </html>
 </body>
 </body>
 <br>
